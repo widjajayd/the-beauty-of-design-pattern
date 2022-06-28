@@ -27,7 +27,7 @@ class BikeRepairman
 
 end
 
-class Administration
+class Administrator
   attr_reader :name
 
   def initialize(name: )
@@ -67,12 +67,12 @@ puts "Create an object for each worker"
 puts "--------------------------------"
 workers = Array.new
 workers << BikeRepairman.new(name: "Ben")
-workers << Administration.new(name: "Jen")
+workers << Administrator.new(name: "Jen")
 workers << Driver.new(name: "Tim")
 puts "Make a tour object."
 puts "--------------------------------"
 @tour_john = BicycleTour.new(
-  bicycle: "Mountain Bike", 
+  bicycle: "Mountain Bike number 3", 
   customer: "John Doe", 
   delivery_car: "FORD 3551")
 puts "Let's ask each worker to do the job."
